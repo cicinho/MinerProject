@@ -8,9 +8,9 @@ import org.ethereum.samples.BasicSample;
  * Miner bean, which just start a miner upon creation and prints miner events
  */
 public class MinerNode extends BasicSample implements EthashListener {
-	public MinerNode() {
+	public MinerNode(String logger) {
 		// peers need different loggers
-		super("sampleMiner");
+		super(logger);
 	}
 
 	// overriding run() method since we don't need to wait for any discovery,
