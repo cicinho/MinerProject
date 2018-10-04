@@ -27,7 +27,7 @@ public class PrivateNetworkMiner {
 						// accounts
 						"genesis = genesis.json \n" +
 						// two peers need to have separate database dirs
-						"database.dir = sampleDB-1 \n" +
+						"database.dir = database \n" +
 						// when more than 1 miner exist on the network extraData helps to identify the
 						// block creator
 						"mine.extraDataHex = cccccccccccccccccccc \n" + "mine.cpuMineThreads = 2 \n"
