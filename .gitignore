@@ -27,6 +27,7 @@
 ### Ethereum ###
 /database
 /logs
+/sampleDB-1
 
 ### Outras ###
 *mvnw*
