@@ -11,6 +11,7 @@ import com.typesafe.config.ConfigFactory;
 public class PrivateNetworkMiner {
 
 	private static String logger = "Miner1";
+	private static String externalIp = "198.168.1.5";
 
 	private static class MinerConfig {
 
@@ -31,7 +32,8 @@ public class PrivateNetworkMiner {
 						// when more than 1 miner exist on the network extraData helps to identify the
 						// block creator
 						"mine.extraDataHex = cccccccccccccccccccc \n" + "mine.cpuMineThreads = 2 \n"
-						+ "cache.flush.blocks = 1";
+						+ "cache.flush.blocks = 1 \n"
+						+ "peer.discovery.external.ip = " + externalIp;
 
 		@Bean
 		public MinerNode node() {
