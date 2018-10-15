@@ -22,6 +22,7 @@ public class PrivateNetworkMiner {
 
 		private final String config =
 				// no need for discovery in that small network
+				//peer 
 				"peer.discovery.enabled = " + properties.getProperty("peer.discovery.enabled") + " \n" + 
 						"peer.listen.port = " + properties.getProperty("peer.listen.port") + " \n" +
 				// need to have different nodeId's for the peers
