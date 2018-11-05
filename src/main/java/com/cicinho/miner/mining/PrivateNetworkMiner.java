@@ -38,7 +38,8 @@ public class PrivateNetworkMiner {
 						// when more than 1 miner exist on the network extraData helps to identify the
 						// block creator
 						"mine.extraDataHex = " + properties.getProperty("mine.extraDataHex") + " \n" + 
-						"mine.cpuMineThreads = " + properties.getProperty("mine.cpuMineThreads") + " \n"
+						"mine.cpuMineThreads = " + properties.getProperty("mine.cpuMineThreads") + " \n" +
+						"mine.minGasPrice = " + properties.getProperty("mine.minGasPrice") + "  \n"
 						+ "cache.flush.blocks = " + properties.getProperty("cache.flush.blocks") + " \n"
 						+ "peer.discovery.external.ip = " + properties.getProperty("peer.discovery.external.ip");
 
